@@ -1,5 +1,5 @@
 ---
-title:  `malloc' in FreeRTOS (or Any)
+title:  `malloc` in FreeRTOS (or Any)
 header:
   teaser: 
 categories: 
