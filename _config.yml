@@ -69,6 +69,11 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: UA-73837434-2
+    
 # SEO Related
 google_site_verification :
 bing_site_verification   :
