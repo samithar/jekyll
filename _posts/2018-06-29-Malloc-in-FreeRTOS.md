@@ -15,16 +15,13 @@ tags:
 ## malloc example
 
 ``` C
-
-		int *ptr_one;
-
-		ptr_one = (int *)malloc(sizeof(int));
-
-		if (ptr_one == 0)
-		{
-			printf("ERROR: Out of memory\n");
-			return 1;
-		}
+int *ptr_one;
+ptr_one = (int *)malloc(sizeof(int));
+if (ptr_one == 0) //if malloc failed (returns a null pointer)
+	{
+	printf("ERROR: Out of memory\n");
+	return 1;
+	}
 
 ```
 
