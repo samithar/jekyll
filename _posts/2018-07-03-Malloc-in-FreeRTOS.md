@@ -35,15 +35,42 @@ FreeRTOS has its own memory management schemes, in particular that is what you s
 
 * heap_1 - the very simplest, does not permit memory to be freed
 * heap_2 - permits memory to be freed, but not does coalescence adjacent free blocks.
-* heap_3 - simply wraps the standard malloc() and free() for thread safety
+* heap_3 - simply wraps the standard `malloc()` and `free()` for thread safety
 * heap_4 - coalescences adjacent free blocks to avoid fragmentation. Includes absolute address placement option
 * heap_5 - as per heap_4, with the ability to span the heap across multiple non-adjacent memory areas
 
 ## so what?
 
-So, FreeRTOS has its own memory usage
+So, FreeRTOS has its own memory usage and `malloc()` does interfere with that. End result? Fragmentation of the heap. If there is not enough
+heap available, null pointer(s) will return. If the user trying to dereference the null? Yeah, it Hard faults.
+
 
 ## Solution
+
+Use `heap4.c` or `heap5.c`.
+
+First, as a short fix, increase the amount of heap available for FreeRTOS. Find FreeRTOSConfig.h or similar in your version
+of FreeRTOS and increase `configTOTAL_HEAP_SIZE`. If you have an accurate linker description *(-ld)* for your architecture, 
+your compiler will warn you when you are about to run out of RAM. If the linker is unable to fit the heap into the RAM, it will
+throw up an error. 
+
+As a proper fix use `pvPortMalloc()` and 'vPortFree()` instead of `malloc()` and `free()`.
+
+Perhaps the following would do the trick, in case if you forget this in the future.
+
+``` C
+#define malloc pvPortMalloc
+#define free vPortFree
+```
+
+If you use `heap_5.c`, right after starting-up, and before the first call to `pvPortMalloc()`, you will have to call:
+``` C
+void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions );
+```
+
+to add the heap regions. Depending on the compiler used, you can calculate the amount of RAM memory dynamically.
+
+
 [1]:http://man7.org/linux/man-pages/man3/realloc.3.html
 [2]:https://www.freertos.org/a00111.html
 
