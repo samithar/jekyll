@@ -14,7 +14,7 @@ tags:
 
 ## malloc example
 
-``` C
+```C
 int *ptr_one;
 ptr_one = (int *)malloc(sizeof(int));
 if (ptr_one == 0) //if malloc failed (returns a null pointer)
@@ -58,13 +58,13 @@ As a proper fix use `pvPortMalloc()` and `vPortFree()` instead of `malloc()` and
 
 Perhaps the following would do the trick, in case if you forget this in the future.
 
-``` C
+```C
 #define malloc pvPortMalloc
 #define free vPortFree
 ```
 
 If you use `heap_5.c`, right after starting-up, and before the first call to `pvPortMalloc()`, you will have to call:
-``` C
+```C 
 void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions );
 ```
 
