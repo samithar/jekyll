@@ -30,7 +30,20 @@ in which, in `C` we call as a `void pointer` it needs to be casted to whatever t
 
 When you allocate the memory, and be done with it, you must `free` that particular block of memory back to the system.
 
+## In FreeRTOS?
+FreeRTOS has its own memory management schemes, in particular that is what you specify with the heapX.c file, in which X corresponds to the implemented mechanism. Listed as follows ([2]).
 
+heap_1 - the very simplest, does not permit memory to be freed
+heap_2 - permits memory to be freed, but not does coalescence adjacent free blocks.
+heap_3 - simply wraps the standard malloc() and free() for thread safety
+heap_4 - coalescences adjacent free blocks to avoid fragmentation. Includes absolute address placement option
+heap_5 - as per heap_4, with the ability to span the heap across multiple non-adjacent memory areas
+
+## so what?
+
+So, FreeRTOS has its own memory usage
+
+## Solution
 [1]:http://man7.org/linux/man-pages/man3/realloc.3.html
-
+[2]:https://www.freertos.org/a00111.html
 
