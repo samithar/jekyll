@@ -54,7 +54,7 @@ of FreeRTOS and increase `configTOTAL_HEAP_SIZE`. If you have an accurate linker
 your compiler will warn you when you are about to run out of RAM. If the linker is unable to fit the heap into the RAM, it will
 throw up an error. 
 
-As a proper fix use `pvPortMalloc()` and 'vPortFree()` instead of `malloc()` and `free()`.
+As a proper fix use `pvPortMalloc()` and `vPortFree()` instead of `malloc()` and `free()`.
 
 Perhaps the following would do the trick, in case if you forget this in the future.
 
