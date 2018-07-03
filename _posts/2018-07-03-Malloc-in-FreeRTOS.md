@@ -14,7 +14,8 @@ tags:
 
 ## malloc example
 
-```C
+```
+{% highlight C linenos %}
 int *ptr_one;
 ptr_one = (int *)malloc(sizeof(int));
 if (ptr_one == 0) //if malloc failed (returns a null pointer)
@@ -22,7 +23,7 @@ if (ptr_one == 0) //if malloc failed (returns a null pointer)
 	printf("ERROR: Out of memory\n");
 	return 1;
 	}
-
+{% endhighlight %}
 ```
 
 The above code initializes an integer pointer, and allocates the `sizeof(int)`. Remember, since malloc retuns a general purpose pointer,
