@@ -14,8 +14,7 @@ tags:
 
 ## malloc example
 
-```
-{% highlight C linenos %}
+```cpp
 int *ptr_one;
 ptr_one = (int *)malloc(sizeof(int));
 if (ptr_one == 0) //if malloc failed (returns a null pointer)
@@ -23,7 +22,7 @@ if (ptr_one == 0) //if malloc failed (returns a null pointer)
 	printf("ERROR: Out of memory\n");
 	return 1;
 	}
-{% endhighlight %}
+
 ```
 
 The above code initializes an integer pointer, and allocates the `sizeof(int)`. Remember, since malloc retuns a general purpose pointer,
@@ -59,13 +58,13 @@ As a proper fix use `pvPortMalloc()` and `vPortFree()` instead of `malloc()` and
 
 Perhaps the following would do the trick, in case if you forget this in the future.
 
-```C
+```cpp
 #define malloc pvPortMalloc
 #define free vPortFree
 ```
 
 If you use `heap_5.c`, right after starting-up, and before the first call to `pvPortMalloc()`, you will have to call:
-```C 
+```cpp 
 void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions );
 ```
 
