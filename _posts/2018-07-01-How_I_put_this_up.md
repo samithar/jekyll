@@ -44,4 +44,4 @@ Any questions? Ask below. I'll explain as much as I can.
 [Github page]:https://pages.github.com/
 [DNS]:https://help.github.com/articles/using-a-custom-domain-with-github-pages/
 [https]:https://help.github.com/articles/securing-your-github-pages-site-with-https/
-[markdown]:https://github.com/samithar/jekyll/blob/gh-pages/_posts/2018-07-01-How_I_put_this_up.md
+[markdown]:https://raw.githubusercontent.com/samithar/jekyll/gh-pages/_posts/2018-07-01-How_I_put_this_up.md
