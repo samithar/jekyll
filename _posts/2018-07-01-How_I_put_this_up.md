@@ -19,7 +19,7 @@ and automation tasks.
 
 Having said that, a friend of mine recommended [Jekyll] to me. It is a simple static blog aware platform where all your text
 files written in markdown format are rendered as static web pages. The beauty of this is the user do not need to maintain 
-any databases etc, or should worry about the capabilities of the web-host. [GithubPage]s fully supports Jekyll hence the hosting
+any databases etc, or should worry about the capabilities of the web-host. [Github Page]s fully supports Jekyll hence the hosting
 is free. 
 
 I did the following.
