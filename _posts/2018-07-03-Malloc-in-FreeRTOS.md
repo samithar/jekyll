@@ -1,7 +1,7 @@
 ---
 title:  malloc in FreeRTOS (or Any)
 header:
-  teaser: 
+  teaser: false
 categories: 
   - Programming
 tags:

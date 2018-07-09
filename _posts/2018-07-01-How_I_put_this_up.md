@@ -20,4 +20,20 @@ and automation tasks.
 Having said that, a friend of mine recommended Jekyll to me. It is a simple static blog aware platform where all your text
 files written in markdown format are rendered as static web pages. The beauty of this is the user do not need to maintain 
 any databases etc, or should worry about the capabilities of the web-host. GithubPages fully supports Jekyll hence the hosting
-is free. Also, 
+is free. 
+
+I did the following.
+
+1. Searched for Jekyll template designs and found minimal mistakes is very appealing.
+2. Forked the repository to my own Github Account and cloned it
+3. Edit the `_config.yml` file to cater for the website.
+4. Went to the repository settings and made it available as a Github page.
+5. Setup the DNS records on my domain name.
+6. Forced https on Github (repository settings)
+7. Write this post in markdown and put to the `_posts` directory
+8. Push the page to the repository
+9. Done 
+
+Yep, thats all. Simple as that.
+
+Any questions? Ask below. I'll explain as much as I can.
