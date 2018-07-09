@@ -17,7 +17,7 @@ bread and butter is C/C++ and Assembly and still lives in a world where memory a
 very scared resources. In addition to the above, I use fair-bit of Python for some high level visualization/data analysis 
 and automation tasks.
 
-Having said that, a friend of mine recommended Jekyll to me. It is a simple static blog aware platform where all your text
+Having said that, a friend of mine recommended [Jekyll] to me. It is a simple static blog aware platform where all your text
 files written in markdown format are rendered as static web pages. The beauty of this is the user do not need to maintain 
 any databases etc, or should worry about the capabilities of the web-host. GithubPages fully supports Jekyll hence the hosting
 is free. 
@@ -37,3 +37,8 @@ I did the following.
 Yep, thats all. Simple as that.
 
 Any questions? Ask below. I'll explain as much as I can.
+
+[Jekyll]:https://jekyllrb.com/
+[2]:
+[3]:
+[4]:
