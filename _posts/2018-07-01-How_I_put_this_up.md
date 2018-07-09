@@ -19,18 +19,18 @@ and automation tasks.
 
 Having said that, a friend of mine recommended [Jekyll] to me. It is a simple static blog aware platform where all your text
 files written in markdown format are rendered as static web pages. The beauty of this is the user do not need to maintain 
-any databases etc, or should worry about the capabilities of the web-host. GithubPages fully supports Jekyll hence the hosting
+any databases etc, or should worry about the capabilities of the web-host. [GithubPage]s fully supports Jekyll hence the hosting
 is free. 
 
 I did the following.
 
-1. Searched for Jekyll template designs and found minimal mistakes is very appealing.
-2. Forked the repository to my own Github Account and cloned it
+1. Searched for Jekyll template designs and found [Minimal Mistakes] is very appealing.
+2. Forked the [Minimal Mistakes] repository to my own [Github Account] and cloned it
 3. Edit the `_config.yml` file to cater for the website.
-4. Went to the repository settings and made it available as a Github page.
-5. Setup the DNS records on my domain name.
-6. Forced https on Github (repository settings)
-7. Write this post in markdown and put to the `_posts` directory
+4. Went to the repository settings and made it available as a [Github page].
+5. Setup the [DNS] records on my domain name.
+6. Forced [https] on Github (repository settings)
+7. Write this post in [markdown] and put to the `_posts` directory
 8. Push the page to the repository
 9. Done 
 
@@ -39,6 +39,9 @@ Yep, thats all. Simple as that.
 Any questions? Ask below. I'll explain as much as I can.
 
 [Jekyll]:https://jekyllrb.com/
-[2]:
-[3]:
-[4]:
+[Minimal Mistakes]:https://github.com/mmistakes/minimal-mistakes/fork
+[Github Account]:https://github.com/samithar/jekyll
+[Github page]:https://pages.github.com/
+[DNS]:https://help.github.com/articles/using-a-custom-domain-with-github-pages/
+[https]:https://help.github.com/articles/securing-your-github-pages-site-with-https/
+[markdown]:https://github.com/samithar/jekyll/blob/gh-pages/_posts/2018-07-01-How_I_put_this_up.md
