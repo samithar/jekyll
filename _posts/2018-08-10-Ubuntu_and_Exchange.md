@@ -1,7 +1,7 @@
 ﻿---
 title:  Ubuntu and Microsoft Exchange Email
 header:
-  teaser: false
+    teaser: https://media.gettyimages.com/photos/man-sorting-mail-at-home-picture-id88583471
 categories: 
   - Ubuntu
 tags:
