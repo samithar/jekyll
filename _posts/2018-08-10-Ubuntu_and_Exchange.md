@@ -7,7 +7,9 @@ categories:
 tags:
   - Work
 ---
+
 #Ubuntu and Microsoft Exchange
+
 Ok, lets make this short and straight forward. Recently, I had to stay home and work. And to make the things more brighter, I forgot to bring my laptop from work. To make it even better, I did not have a Windows running laptop at home, as most of my work home work things done in an Ubuntu.
 
 Since my work use Windows, specifically Microsoft Exchange as the email service, I had to find a quick trick to get/reply to my emails. 
